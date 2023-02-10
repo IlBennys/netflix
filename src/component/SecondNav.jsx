@@ -1,6 +1,5 @@
 import { Component } from "react"
 import { Nav, Navbar, NavDropdown } from "react-bootstrap"
-import DropdownMenu from "react-bootstrap/esm/DropdownMenu"
 
 class SecondNav extends Component {
   render() {

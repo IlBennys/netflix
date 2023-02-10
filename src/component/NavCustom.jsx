@@ -11,19 +11,19 @@ class NavCustom extends Component {
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto ">
-            <Nav.Link href="#features" className="text-white">
+            <Nav.Link href="#features" id="link" className="text-white">
               Home
             </Nav.Link>
-            <Nav.Link href="#pricing" className="text-white">
+            <Nav.Link href="#pricing" id="link" className="text-white">
               <strong>TV Shows</strong>
             </Nav.Link>
-            <Nav.Link href="#pricing" className="text-white">
+            <Nav.Link href="#pricing" id="link" className="text-white">
               Movies
             </Nav.Link>
-            <Nav.Link href="#pricing" className="text-white">
+            <Nav.Link href="#pricing" id="link" className="text-white">
               Recently Added
             </Nav.Link>
-            <Nav.Link href="#pricing" className="text-white">
+            <Nav.Link href="#pricing" id="link" className="text-white">
               My List
             </Nav.Link>
           </Nav>
@@ -43,7 +43,7 @@ class NavCustom extends Component {
                 />
               </svg>
             </Nav.Link>
-            <Nav.Link href="#deets" className="text-white">
+            <Nav.Link href="#deets" className="text-white" id="link">
               KIDS
             </Nav.Link>
             <Nav.Link href="#deets">
