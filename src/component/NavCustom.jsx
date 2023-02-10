@@ -6,7 +6,7 @@ class NavCustom extends Component {
     return (
       <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
         <Navbar.Brand href="#home">
-          <img src="../assets/logo.png" alt="pic-logo" />
+          <img style={{ width: "100px", height: "55px" }} src={this.props.sorgente} alt="pic-logo" className="ms-3" />
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
