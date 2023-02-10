@@ -1,13 +1,13 @@
 import { Component } from "react"
 import CardMovie from "./CardMovie"
 
-class FirstLine extends Component {
+class SecondLine extends Component {
   state = {
     cover: [],
   }
   componentDidMount = async () => {
     try {
-      const response = await fetch("http://www.omdbapi.com/?apikey=fa8d42b&s=harry%20potter&plot=full")
+      const response = await fetch("http://www.omdbapi.com/?apikey=fa8d42b&type=movie&s=Saw&plot=full")
       if (response.ok) {
         const data = await response.json()
         this.setState({ cover: data.Search })
@@ -24,4 +24,4 @@ class FirstLine extends Component {
   }
 }
 
-export default FirstLine
+export default SecondLine

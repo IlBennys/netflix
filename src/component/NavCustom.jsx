@@ -4,9 +4,9 @@ import { Nav, Navbar } from "react-bootstrap"
 class NavCustom extends Component {
   render() {
     return (
-      <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
+      <Navbar collapseOnSelect expand="lg" bg="trasparent" variant="dark">
         <Navbar.Brand href="#home">
-          <img style={{ width: "100px", height: "55px" }} src={this.props.sorgente} alt="pic-logo" className="ms-3" />
+          <img style={{ width: "100px", height: "55px" }} src={this.props.sorgente} alt="pic-logo" />
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">

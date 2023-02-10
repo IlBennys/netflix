@@ -5,30 +5,28 @@ import DropdownMenu from "react-bootstrap/esm/DropdownMenu"
 class SecondNav extends Component {
   render() {
     return (
-      <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
+      <Navbar collapseOnSelect expand="lg" bg="trasparent" variant="dark">
         <Navbar.Brand href="#home">
-          <h2 className="ms-3">TV Show</h2>
+          <h2 className="">TV Show</h2>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">
             <NavDropdown
               title="Genres &nbsp;"
-              className="btn btn-secondary btn-sm  rounded-0"
+              className="btn btn-secondary rounded-0 p-0"
               id="basic-nav-dropdown"
               style={{ backgroundColor: "#221f1f" }}
             >
-              <DropdownMenu className="bg-dark">
-                <NavDropdown.Item className="bg-dark text-white" href="#action/3.1">
-                  Comedy
-                </NavDropdown.Item>
-                <NavDropdown.Item className="bg-dark text-white" href="#action/3.2">
-                  Drama
-                </NavDropdown.Item>
-                <NavDropdown.Item className="bg-dark text-white" href="#action/3.3">
-                  Thriller
-                </NavDropdown.Item>
-              </DropdownMenu>
+              <NavDropdown.Item className="bottoncino text-white" href="#action/3.1">
+                Comedy
+              </NavDropdown.Item>
+              <NavDropdown.Item className="bottoncino text-white" href="#action/3.2">
+                Drama
+              </NavDropdown.Item>
+              <NavDropdown.Item className="bottoncino text-white" href="#action/3.3">
+                Thriller
+              </NavDropdown.Item>
             </NavDropdown>
           </Nav>
           <Nav>

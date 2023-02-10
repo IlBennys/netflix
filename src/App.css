@@ -64,3 +64,23 @@ footer {
 .col img:hover {
   transform: scale(1.1);
 }
+
+a {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+.cardina:hover {
+  transform: scale(1.2);
+  z-index: 3;
+}
+
+.dropdown-menu.show {
+  background-color: #221f1f;
+}
+
+.bottoncino:hover {
+  background-color: black;
+}
