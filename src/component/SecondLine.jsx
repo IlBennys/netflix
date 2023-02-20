@@ -11,7 +11,7 @@ class SecondLine extends Component {
       if (response.ok) {
         const data = await response.json()
         this.setState({ cover: data.Search })
-        console.log(this.state.cover)
+        // console.log(this.state.cover)
       } else {
         console.log("error while fetching")
       }
@@ -20,7 +20,16 @@ class SecondLine extends Component {
     }
   }
   render() {
-    return this.state.cover.map((mov) => <CardMovie movie={mov} />)
+    return (
+      <>
+        <h4 className="my-4">Saw Saga</h4>
+        <div className="d-flex  flex-wrap flex-lg-nowrap justify-content-between  ">
+          {this.state.cover.map((mov, i) => (
+            <CardMovie movie={mov} key={i} />
+          ))}
+        </div>
+      </>
+    )
   }
 }
 

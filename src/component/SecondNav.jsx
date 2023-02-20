@@ -35,7 +35,7 @@ class SecondNav extends Component {
                 width="16"
                 height="16"
                 fill="currentColor"
-                class="bi bi-border-all"
+                className="bi bi-border-all"
                 viewBox="0 0 16 16"
               >
                 <path
@@ -50,7 +50,7 @@ class SecondNav extends Component {
                 width="16"
                 height="16"
                 fill="currentColor"
-                class="bi bi-border-all"
+                className="bi bi-border-all"
                 viewBox="0 0 16 16"
               >
                 <path

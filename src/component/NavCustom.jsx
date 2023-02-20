@@ -1,8 +1,11 @@
 import { Component } from "react"
 import { Nav, Navbar } from "react-bootstrap"
+import { Link } from "react-router-dom"
+// import { useLocation } from "react-router-dom"
 
 class NavCustom extends Component {
   render() {
+    // let location = useLocation()
     return (
       <Navbar collapseOnSelect expand="lg" bg="trasparent" variant="dark">
         <Navbar.Brand href="#home">
@@ -11,19 +14,22 @@ class NavCustom extends Component {
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto ">
-            <Nav.Link href="#features" id="link" className="text-white">
-              Home
+            <Nav.Link id="link" className="text-white">
+              <Link to="/home"> Home</Link>
             </Nav.Link>
-            <Nav.Link href="#pricing" id="link" className="text-white">
-              <strong>TV Shows</strong>
+            <Nav.Link id="link" className="text-white">
+              <Link to="/TVShow" className="text-decoration-none text-white">
+                <strong>TV Shows</strong>
+              </Link>
             </Nav.Link>
-            <Nav.Link href="#pricing" id="link" className="text-white">
+
+            <Nav.Link id="link" className="text-white">
               Movies
             </Nav.Link>
-            <Nav.Link href="#pricing" id="link" className="text-white">
+            <Nav.Link id="link" className="text-white">
               Recently Added
             </Nav.Link>
-            <Nav.Link href="#pricing" id="link" className="text-white">
+            <Nav.Link id="link" className="text-white">
               My List
             </Nav.Link>
           </Nav>
@@ -34,7 +40,7 @@ class NavCustom extends Component {
                 width="16"
                 height="16"
                 fill="currentColor"
-                class="bi bi-search"
+                className="bi bi-search"
                 viewBox="0 0 16 16"
               >
                 <path
@@ -52,7 +58,7 @@ class NavCustom extends Component {
                 width="16"
                 height="16"
                 fill="currentColor"
-                class="bi bi-bell-fill"
+                className="bi bi-bell-fill"
                 viewBox="0 0 16 16"
               >
                 <path
@@ -67,7 +73,7 @@ class NavCustom extends Component {
                 width="16"
                 height="16"
                 fill="currentColor"
-                class="bi bi-person-fill"
+                className="bi bi-person-fill"
                 viewBox="0 0 16 16"
               >
                 <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3Zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z" fill="white" />
@@ -79,5 +85,4 @@ class NavCustom extends Component {
     )
   }
 }
-
 export default NavCustom

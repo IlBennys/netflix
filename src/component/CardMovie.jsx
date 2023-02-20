@@ -1,5 +1,5 @@
 import { Component } from "react"
-import { Col, Row } from "react-bootstrap"
+// import { Col, Row } from "react-bootstrap"
 import Card from "react-bootstrap/Card"
 
 class CardMovie extends Component {
